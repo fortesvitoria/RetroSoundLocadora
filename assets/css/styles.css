@@ -1,0 +1,177 @@
+/* variaveis */
+
+:root {
+    --fonte-primaria: 'Aclonica', sans-serif;
+    --fonte-secundaria: 'Poppins', sans-serif;
+
+    --preto: #000000;
+    --grafite: #202020;
+    --azul: #2ca7e0;
+    --verde: #12814a;
+    --off-white: #F2F2F2;
+    --amarelo: #f3ca15d3;
+    --roxo: #8C52FF;
+    --rosa-diluido: #ff2d737e;
+    --lilas: #A084E8;
+    --laranja: #F86F03;
+    --vermelho: #FF3131;
+}
+
+/* geral */
+
+body {
+    font-family: var(--fonte-secundaria);
+    color: var(--off-white);
+    margin: 0;
+    background-color: var(--grafite);
+}
+
+h1,
+h2 {
+    font-family: var(--fonte-primaria);
+}
+
+a {
+    text-decoration: none;
+    color: var(--off-white);
+}
+
+a:hover {
+    color: var(--grafite);
+}
+
+ul {
+    list-style: none;
+  }
+
+/* menu */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to right, var(--roxo), var(--laranja));
+    padding: 0.2em;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-icone {
+    align-self: center;
+    width: 50px;
+    height: 50px;
+}
+
+h1 {
+    font-size: 32px;
+    margin: 0.2em;
+    padding-left: 0.25em;
+}
+
+.itens {
+    margin-right: 5em;
+}
+
+.link-item {
+    display: inline;
+    padding: 0.5em;
+}
+
+/* conteudo */
+
+h2 {
+    font-size: 28px;
+}
+
+.conteudo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-img {
+    max-width: 400px;
+    padding: 1em 1em 0 0;
+}
+
+.botao {
+    padding: 0.5em;
+    border-radius: 100px;
+    border: solid 2px var(--azul);
+    background-image: linear-gradient(to right, var(--roxo), var(--laranja));
+}
+
+#item1,
+#item3,
+#item5,
+#item6 {
+    padding: 3em 5em 3em 5em;
+}
+
+#item2 {
+    background-color: var(--verde);
+    clip-path: polygon(0 30%, 100% 0%, 100% 100%, 0% 100%);
+    padding: 8em 5em 3em 5em;
+}
+
+
+#item4 {
+    background-color: var(--laranja);
+    clip-path: polygon(0 0, 100% 0%, 100% 69%, 0% 100%);
+    padding: 3em 5em 8em 5em;
+}
+
+#item6 {
+    background-color: var(--roxo);
+    padding: 0.5em;
+}
+
+/* formulario */
+.form {
+    background-color: var(--rosa-diluido);
+    padding: 2em 5em 4em 5em;
+    clip-path: polygon(2% 7%, 100% 0%, 98% 93%, 0% 100%);
+}
+
+.input-form {
+    color: var(--off-white);
+    font-family: var(--fonte-secundaria);
+    background: var(--grafite);
+    border-radius: 100px;
+    border: none;
+    width: 100%;
+    margin: 0 0 1em 0;
+    
+}
+
+.form .botao {
+    margin-top: 1em;
+    display: inline-block;
+}
+
+.logo h2{
+    margin: 0.2em;
+    padding-left: 0.25em;
+}
+
+.copyright {
+    font-size: 14px;
+}
+
+.icone-sgv {
+    width: 30px;
+    padding-right: 0.5em;
+}
+
+.itens-lista {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item-lista {
+display: inline-flex;
+padding: 0.3em;
+}
