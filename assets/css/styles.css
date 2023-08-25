@@ -42,7 +42,7 @@ a:hover {
 
 ul {
     list-style: none;
-  }
+}
 
 /* menu */
 .menu {
@@ -51,6 +51,9 @@ ul {
     align-items: center;
     background-image: linear-gradient(to right, var(--roxo), var(--laranja));
     padding: 0.2em;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 .logo {
@@ -143,7 +146,7 @@ h2 {
     border: none;
     width: 100%;
     margin: 0 0 1em 0;
-    
+
 }
 
 .form .botao {
@@ -151,7 +154,7 @@ h2 {
     display: inline-block;
 }
 
-.logo h2{
+.logo h2 {
     margin: 0.2em;
     padding-left: 0.25em;
 }
@@ -172,6 +175,150 @@ h2 {
 }
 
 .item-lista {
-display: inline-flex;
-padding: 0.3em;
+    display: inline-flex;
+    padding: 0.3em;
+}
+
+/* responsividade tablet e celular*/
+
+@media screen and (max-width: 1024px) {
+
+    /* menu */
+    .menu h1 {
+        font-size: 16px;
+    }
+
+    /* conteudo */
+
+    p {
+        margin-bottom: 2.5em;
+    }
+
+    .conteudo-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .conteudo-img {
+        width: 600px;
+        align-items: center;
+        padding: 3em 0 0 0;
+    }
+
+    #item1,
+    #item3 {
+        flex-direction: column-reverse;
+    }
+
+    #item1 {
+        padding: 6em 5em 0 5em;
+    }
+
+    #item2 {
+        padding: 6em 5em 6em 5em;
+    }
+
+    #item3 {
+        padding: 3em 5em 6em 5em;
+    }
+
+    #item4 {
+        padding: 3em 5em 11em 5em;
+    }
+
+    #item5 {
+        padding: 3em 5em 6em 5em;
+    }
+
+    #item5 .conteudo-img {
+        padding: 3em 5em 11em 5em;
+        display: none;
+    }
+
+    #item6 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #item6 h2 {
+        font-size: 16px;
+    }
+
+    #item6 p {
+        margin: 0;
+    }
+
+}
+
+/* responsividade celulares */
+
+@media screen and (max-width: 767px) {
+
+    /* menu */
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu a {
+        font-size: 14px;
+    }
+
+    .itens {
+        margin: 0;
+    }
+
+    .link-itens {
+        padding: 0;
+    }
+
+
+    /* conteudo */
+
+    #item2 {
+        clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+    }
+
+    #item4 {
+        clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+    }
+
+    #item6 {
+        flex-direction: column;
+    }
+
+    .itens-lista {
+        flex-direction: row;
+    }
+
+    #item1 {
+        padding: 6em 2em 3em 2em;
+    }
+
+    #item2,
+    #item3,
+    #item4,
+    #item5 {
+        padding: 3em 2em 3em 2em;
+    }
+
+    #item6 h2 {
+        padding: 2em 0 1em 0;
+    }
+
+    #item6 p {
+        font-size: 12px;
+        padding: 2em 0 1em 0;
+    }
+
+
+
+    /* formulario */
+    .form {
+        padding: 2em 2em 4em 2em;
+    }
+
 }
