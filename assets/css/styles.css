@@ -110,7 +110,7 @@ h2 {
 #item3,
 #item5,
 #item6 {
-    padding: 3em 5em 3em 5em;
+    padding: 6em 5em 3em 5em;
 }
 
 #item2 {
@@ -294,15 +294,12 @@ h2 {
         flex-direction: row;
     }
 
-    #item1 {
-        padding: 6em 2em 3em 2em;
-    }
-
+    #item1,
     #item2,
     #item3,
     #item4,
     #item5 {
-        padding: 3em 2em 3em 2em;
+        padding: 6em 2em 3em 2em;
     }
 
     #item6 h2 {
