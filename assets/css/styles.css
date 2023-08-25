@@ -123,7 +123,7 @@ h2 {
 #item4 {
     background-color: var(--laranja);
     clip-path: polygon(0 0, 100% 0%, 100% 69%, 0% 100%);
-    padding: 3em 5em 8em 5em;
+    padding: 6em 5em 8em 5em;
 }
 
 #item6 {
